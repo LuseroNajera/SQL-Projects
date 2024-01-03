@@ -24,7 +24,7 @@ A library catalog is a dataset on books and authors.
     author_name **VARCHAR*(100)
 );
 
-Inserting Data: 
+### **Inserting Data:** 
 
 | Author Table | Books Table |
 |---|---|
