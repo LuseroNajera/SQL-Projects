@@ -60,6 +60,7 @@ A library catalog is a dataset on books and authors.
 <img width="600" alt="image" src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/8d402098-7aff-4de6-abcc-2c96124bc032">
 
 
+### **JOIN Query**
 
 
 
