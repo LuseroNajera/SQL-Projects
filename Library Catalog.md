@@ -49,6 +49,18 @@ A library catalog is a dataset on books and authors.
 |INSERT INTO Author VALUES (19, 'Tara Laskowski');| INSERT INTO Books VALUES(19, 'The Weekend Retreat ', 2023); | 
 |INSERT INTO Author VALUES (20, 'Megan Lally');|INSERT INTO Books VALUES (20, 'Thats Not My Name ', 2023); |
 
+### **SELECT Query** 
+
+**SELECT * FROM Author;**
+
+<img width="600" alt="image" src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/052bc85a-0e60-4008-82e2-f6c25344cc2d">
+
+**SELECT * FROM Books;**
+
+<img width="600" alt="image" src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/8d402098-7aff-4de6-abcc-2c96124bc032">
+
+
+
 
 
 
