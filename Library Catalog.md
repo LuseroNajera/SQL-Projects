@@ -31,41 +31,44 @@ Location
 - 
 
 ### **Creating Tables** 
-**CREATE TABLE** Books ( 
-    book_id **INT* **PRIMARY KEY**,    
-    title **VARCHAR*(200),
-    publication_year **INT*
-);
+**Book Table**
+- CREATE TABLE books (
+    book_id INT PRIMARY KEY,
+    published_date INT,
+    title VARCHAR(255) NOT NULL,
+    author_id INT,
+    FOREIGN KEY (author_id) REFERENCES authors(author_id)
+  );
+  
+**Authors Table**
+- CREATE TABLE authors (
+    author_id INT PRIMARY KEY,
+    author_name VARCHAR(255) NOT NULL
+  );
+  
+**Location Table**
+- CREATE TABLE locations (
+    location_id INT PRIMARY KEY,
+    location_name VARCHAR(200) NOT NULL,
+    address VARCHAR(200) NOT NULL,
+    book_id INT,
+    FOREIGN KEY (book_id) REFERENCES books(book_id)
+  );
 
-**CREATE TABLE** Author (
-    author_id **INT* **PRIMARY KEY**,    
-    author_name **VARCHAR*(100)
-);
 
 ### **Inserting Data:** 
 
-| Author Table | Books Table |
-|---|---|
-|INSERT INTO Author VALUES (1, 'Jessica Roux'); | INSERT INTO Books VALUES (1, 'Floriography', 2020); |
-|INSERT INTO Author VALUES (2, 'George Orwell');|INSERT INTO Books VALUES  (2, 'Animal Farm', 1945)); | 
-|INSERT INTO Author VALUES (3, 'Bram Stoker');| INSERT INTO Books VALUES (3, 'Dracula', 1897); |
-|INSERT INTO Author VALUES (4, 'Ray Bradbury');| INSERT INTO Books VALUES (4, 'Fahrenheit 451', 1953); | 
-|INSERT INTO Author VALUES (5, 'Herman Melville');| INSERT INTO Books VALUES (5, 'Moby-Dick ', 1851); |
-|INSERT INTO Author VALUES (6, 'William Shakespeare');| INSERT INTO Books VALUES (6, 'Romeo and Juliet ', 1597); |
-|INSERT INTO Author VALUES (7, 'William Golding');| INSERT INTO Books VALUES (7, 'Lord of the Flies ', 1954); |
-|INSERT INTO Author VALUES (8, 'Edgar Allan Poe');| INSERT INTO Books VALUES (8, 'The Raven ', 1845); |
-|INSERT INTO Author VALUES (9, 'Larry McMurtry');| INSERT INTO Books VALUES (9, 'Lonesome Dove', 1985); |
-|INSERT INTO Author VALUES (10, 'John Grisham');| INSERT INTO Books VALUES (10, 'The Godfather ', 1969);|
-|INSERT INTO Author VALUES (11, 'Mario Puzo');| INSERT INTO Books VALUES (11, 'The Name of the Rose ', 1980); |
-|INSERT INTO Author VALUES (12, 'Umberto Eco');| INSERT INTO Books VALUES (12, 'The Da Vinci Code ', 2003); | 
-|INSERT INTO Author VALUES (13, 'Dan Brown');| INSERT INTO Books VALUES (13, 'Floriography', 2020); |
-|INSERT INTO Author VALUES (14, 'Wilkie Collins');| INSERT INTO Books VALUES (14, 'The Woman in White ', 2003); |
-|INSERT INTO Author VALUES (15, 'Tana French');| INSERT INTO Books VALUES  (15, 'In the Woods ', 2007); | 
-|INSERT INTO Author VALUES (16, 'Anthony Horowitz');| INSERT INTO Books VALUES (16, 'Magpie Murders ', 2016); |
-|INSERT INTO Author VALUES (17, 'Paula Hawkins');| INSERT INTO Books VALUES (17, 'The Girl on the Train', 2015); | 
-|INSERT INTO Author VALUES (18, 'Ruth Ware'); | INSERT INTO Books VALUES (18, 'In the Dark, Dark Woods', 2015); |
-|INSERT INTO Author VALUES (19, 'Tara Laskowski');| INSERT INTO Books VALUES(19, 'The Weekend Retreat ', 2023); | 
-|INSERT INTO Author VALUES (20, 'Megan Lally');|INSERT INTO Books VALUES (20, 'Thats Not My Name ', 2023); |
+| Author Table | Books Table | Location Table |
+|---|---|---| 
+|INSERT INTO Authors VALUES (1001, 'Jessica Roux'); | INSERT INTO Books VALUES (0012, 2020, 'Floriography', 1001 ); |INSERT INTO Locations VALUES (20112, 'City Library', '123 Main St', 0012);|
+|INSERT INTO Authors VALUES (1012, 'George Orwell');|INSERT INTO Books VALUES  (0013, 1945, 'Animal Farm', 1012 ); | INSERT INTO Locations VALUES (20212, 'Downtown Bookstore', '456 Tech Ave', 0013);|
+|INSERT INTO Authors VALUES (1018, 'Bram Stoker');| INSERT INTO Books VALUES (0019, 1897, 'Dracula', 1018 ); |INSERT INTO Locations VALUES (20312, 'Community Center', '789 Community Blvd', 0019);|
+|INSERT INTO Authors VALUES (1006, 'Ray Bradbury');| INSERT INTO Books VALUES (0043, 1953, 'Fahrenheit 451', 1006 ); | INSERT INTO Locations VALUES (20412, 'High School Library', '567 School Dr', 0043);|
+|INSERT INTO Authors VALUES (1004, 'Herman Melville');| INSERT INTO Books VALUES (0023, 1851, 'Moby-Dick', 1004 ); |INSERT INTO Locations VALUES (20512, 'University Library', '567 Campus Dr', 0023);|
+|INSERT INTO Authors VALUES (1010, 'William Shakespeare');| INSERT INTO Books VALUES (0039, 1597, 'Romeo and Juliet',1010 ); |INSERT INTO Locations VALUES (20612, 'Abbey Library', '394 Abbey Blvd', 0039);|
+|INSERT INTO Authors VALUES (1007, 'William Golding');| INSERT INTO Books VALUES (0009, 1954, 'Lord of the Flies' ,1007 ); |INSERT INTO Locations VALUES (20712, 'Art Museum', '094 Dandy St', 0009);|
+|INSERT INTO Authors VALUES (1013, 'Edgar Allan Poe');| INSERT INTO Books VALUES (0025, 1845, 'The Raven ', 1013 ); |INSERT INTO Locations VALUES (20812, 'Cypress Center', '239 Cypress Dr', 0025);|
+
 
 ### **SELECT Query** 
 
