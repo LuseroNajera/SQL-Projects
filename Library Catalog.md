@@ -3,11 +3,11 @@
 Note: I am using Oracle APEX to create these SQL commands and queries. 
 
 ## **Table of Contents**
-    - [Creating Tables](#Creating Tables)
-    - [Inserting Data](#Inserting Data)
-    - [Select Query](#SELECT Query)
-    - [Sorting Data](#Sorting Data)
-    - [JOIN Query](#JOIN Query)
+    - [Creating Tables](#Creating)
+    - [Inserting Data](#Inserting)
+    - [Select Query](#SELECT)
+    - [Sorting Data](#Sorting )
+    - [JOIN Query](#JOIN)
 
 
 ### **Creating Tables**
