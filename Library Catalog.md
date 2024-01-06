@@ -80,8 +80,19 @@ Location
 
 <img width="600" alt="image" src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/8d402098-7aff-4de6-abcc-2c96124bc032">
 
+### **Sorting Data**
+- Sorting Data by publishe date of books.  
+- ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/a1d134de-46d4-40a2-9005-2770b2bf05b2)
+
 
 ### **JOIN Query**
+- Retrieveing information about the books alongisde the corresponding author names. 
+- ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/68c9ecd1-1a77-44fb-a9c5-ff856f687d82)
+
+- Retrieving information about the locations in which the book_ID can be found. 
+- ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/4a5e3397-ab47-4ab6-890d-82e952763cb8)
+
+
 
 
 
