@@ -1,13 +1,13 @@
 # **Library Catalog**     
+
 **A library catalog is a dataset of books and authors.** <img width="100" alt="image" src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/1df5805e-e494-40f2-a85e-9446b3dc9573">
 Note: I am using Oracle APEX to create these SQL commands and queries. 
 
-## **Table of Contents:**
-    - [Creating Tables](#Tables)
-    - [Inserting Data](#Inserting)
-    - [Select Query](#SELECT)
-    - [Sorting Data](#Sorting )
-    - [JOIN Query](#JOIN)
+## Table of Contents: 
+- [Tables](#Tables)
+- [Inserting Data](#Inserting)
+- [SELECT Queries](#SELECT)
+- [JOIN Queries](#JOIN)
 
 
 ### Tables
@@ -37,7 +37,7 @@ Note: I am using Oracle APEX to create these SQL commands and queries.
   );
 
 
-### **Inserting Data** 
+### Inserting Data
 
 | Author Table | Books Table | Location Table |
 |---|---|---| 
@@ -51,7 +51,7 @@ Note: I am using Oracle APEX to create these SQL commands and queries.
 |INSERT INTO Authors VALUES (1013, 'Edgar Allan Poe');| INSERT INTO Books VALUES (0025, 1845, 'The Raven ', 1013 ); |INSERT INTO Locations VALUES (20812, 'Cypress Center', '239 Cypress Dr', 0025);|
 
 
-### **SELECT Query** 
+## **SELECT Queries** 
 
 **SELECT * FROM Author;**
 
@@ -67,7 +67,7 @@ SELECT * FROM Books ORDER BY published_date ASC;
 ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/a1d134de-46d4-40a2-9005-2770b2bf05b2)
 
 
-### **JOIN Query**
+### **JOIN Queries**
 
 - Retrieveing information about the books alongisde the corresponding author names.
 SELECT books.book_id, books.title, authors.author_name
