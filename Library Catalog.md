@@ -81,18 +81,32 @@ Location
 <img width="600" alt="image" src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/8d402098-7aff-4de6-abcc-2c96124bc032">
 
 ### **Sorting Data**
-- Sorting Data by publishe date of books.  
-- ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/a1d134de-46d4-40a2-9005-2770b2bf05b2)
+- Sorting Data by publishe date of books.
+SELECT * FROM Books ORDER BY published_date ASC;
+![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/a1d134de-46d4-40a2-9005-2770b2bf05b2)
 
 
 ### **JOIN Query**
-- Retrieveing information about the books alongisde the corresponding author names. 
-- ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/68c9ecd1-1a77-44fb-a9c5-ff856f687d82)
 
-- Retrieving information about the locations in which the book_ID can be found. 
-- ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/4a5e3397-ab47-4ab6-890d-82e952763cb8)
+- Retrieveing information about the books alongisde the corresponding author names.
+SELECT books.book_id, books.title, authors.author_name
+FROM books
+INNER JOIN authors ON books.author_id = authors.author_id;
+![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/68c9ecd1-1a77-44fb-a9c5-ff856f687d82)
 
+- Retrieving information about the locations in which the book_ID can be found.
+SELECT locations.*, books.title
+FROM locations
+INNER JOIN books ON locations.book_id = books.book_id;
+![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/4a5e3397-ab47-4ab6-890d-82e952763cb8)
 
+## **JOIN with GROUP BY Query**
+- Retreiving information on how many books each author has in the dataset. And grouping by author's name. 
+SELECT authors.author_name, COUNT(books.book_id) AS book_count
+FROM books
+JOIN authors ON books.author_id = authors.author_id
+GROUP BY authors.author_name;
+![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/6fba206d-8bad-4314-a967-7cbae04fa48d)
 
 
 
