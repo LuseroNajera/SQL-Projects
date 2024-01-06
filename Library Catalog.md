@@ -10,7 +10,7 @@ Note: I am using Oracle APEX to create these SQL commands and queries.
     - [JOIN Query](#JOIN)
 
 
-### **Creating Tables**
+## **Creating Tables**
 
 **Book Table**
 - CREATE TABLE books (
