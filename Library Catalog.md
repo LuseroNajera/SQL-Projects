@@ -10,7 +10,25 @@ A library catalog is a dataset on books and authors.
     - Select Query 
     - JOIN Query 
     - Aggregate Query 
-    
+
+### ERD Table 
+
+Books
+- Book_ID
+- Book_Name
+- Published Date
+- Author_Name
+Authos
+- Author_Name
+- Author_ID
+Genres
+- Genre_Name
+- Book_ID
+Location
+- Location_Name
+- Location_Address
+- Book_ID
+- 
 
 ### **Creating Tables** 
 **CREATE TABLE** Books ( 
