@@ -5,12 +5,12 @@ Note: I am using Oracle APEX to create these SQL commands and queries.
 
 ## Table of Contents: 
 - [Tables](#Tables)
-- [Inserting Data](#Inserting)
-- [SELECT Queries](#SELECT)
-- [JOIN Queries](#JOIN)
+- [Data](#Data)
+- [Queries](#Queries) 
 
 
-### Tables
+
+## Tables
 
 **Book Table**
 - CREATE TABLE books (
@@ -37,7 +37,7 @@ Note: I am using Oracle APEX to create these SQL commands and queries.
   );
 
 
-### Inserting Data
+## Data
 
 | Author Table | Books Table | Location Table |
 |---|---|---| 
@@ -50,8 +50,9 @@ Note: I am using Oracle APEX to create these SQL commands and queries.
 |INSERT INTO Authors VALUES (1007, 'William Golding');| INSERT INTO Books VALUES (0009, 1954, 'Lord of the Flies' ,1007 ); |INSERT INTO Locations VALUES (20712, 'Art Museum', '094 Dandy St', 0009);|
 |INSERT INTO Authors VALUES (1013, 'Edgar Allan Poe');| INSERT INTO Books VALUES (0025, 1845, 'The Raven ', 1013 ); |INSERT INTO Locations VALUES (20812, 'Cypress Center', '239 Cypress Dr', 0025);|
 
+## Queries
 
-## **SELECT Queries** 
+### **SELECT Queries** 
 
 **SELECT * FROM Author;**
 
