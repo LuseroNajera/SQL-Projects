@@ -1,36 +1,17 @@
 # **Library Catalog**     
-<img width="100" alt="image" src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/1df5805e-e494-40f2-a85e-9446b3dc9573">
+**A library catalog is a dataset of books and authors.** <img width="100" alt="image" src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/1df5805e-e494-40f2-a85e-9446b3dc9573">
 Note: I am using Oracle APEX to create these SQL commands and queries. 
 
-A library catalog is a dataset on books and authors. 
-
 ## **Table of Contents**
-    - Creating Tables
-    - Inserting Data
-    - Select Query 
-    - JOIN Query 
-    - Aggregate Query 
+    - [Creating Tables](#Creating Tables)
+    - [Inserting Data](#Inserting Data)
+    - [Select Query](#SELECT Query)
+    - [Sorting Data](#Sorting Data)
+    - [JOIN Query](#JOIN Query)
 
-### ERD Table 
 
-Books
-- Book_ID
-- Book_Name
-- Published Date
-- Author_Name
-Authos
-- Author_Name
-- Author_ID
-Genres
-- Genre_Name
-- Book_ID
-Location
-- Location_Name
-- Location_Address
-- Book_ID
-- 
+### **Creating Tables**
 
-### **Creating Tables** 
 **Book Table**
 - CREATE TABLE books (
     book_id INT PRIMARY KEY,
@@ -56,7 +37,7 @@ Location
   );
 
 
-### **Inserting Data:** 
+### **Inserting Data** 
 
 | Author Table | Books Table | Location Table |
 |---|---|---| 
