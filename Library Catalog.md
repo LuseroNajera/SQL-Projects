@@ -1,6 +1,9 @@
 # **Library Catalog**     
 
-**A library catalog is a dataset of books and authors.** <img width="100" alt="image" src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/1df5805e-e494-40f2-a85e-9446b3dc9573">
+<img width="100" alt="image" src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/1df5805e-e494-40f2-a85e-9446b3dc9573">
+
+**A library catalog is a dataset of books and authors.** 
+
 Note: I am using Oracle APEX to create these SQL commands and queries. 
 
 ## Table of Contents: 
