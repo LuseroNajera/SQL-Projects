@@ -118,7 +118,7 @@ Retrieving information about the locations in which the book_ID can be found.
 ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/4a5e3397-ab47-4ab6-890d-82e952763cb8)
 
 
-## **JOIN with GROUP BY Query**
+### **JOIN with GROUP BY Query**
 
 Retrieving information on how many books each author has in the dataset. And grouping by author's name. 
 
