@@ -36,6 +36,13 @@ Passengers
 - Passenger name
 - flight number
 - ticket mumber
+- CREATE TABLE Passengers (
+    Passenger_ID INT PRIMARY KEY,
+    Passenger_Name VARCHAR2(100),
+    Flight_Number INT,
+    Ticket_Number INT,
+    FOREIGN KEY (Flight_Number) REFERENCES Flight(Flight_Number)
+);
 
 Fligjt Crew
 = crew name
