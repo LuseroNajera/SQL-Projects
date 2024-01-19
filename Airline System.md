@@ -19,37 +19,10 @@ Table of Contents
 
 
 ### Creating Tables 
-Airplanes
-- Airplane Number
-- CREATE TABLE Airplane (
-    Airplane_Number INT PRIMARY KEY);
 
-Flihgt 
-- flight number
-- ariplane number
-- CREATE TABLE Flights (
-    Airplane_Number INT PRIMARY KEY,
-    Flight_Number INT );
 
-Passengers
-- passenger id
-- Passenger name
-- flight number
-- ticket mumber
-- CREATE TABLE Passengers (
-    Passenger_ID INT PRIMARY KEY,
-    Passenger_Name VARCHAR2(100),
-    Flight_Number INT,
-    Ticket_Number INT,
-    FOREIGN KEY (Flight_Number) REFERENCES Flight(Flight_Number)
-);
+|Airplanes| Flight | Passengers | Flight Crew | 
+|---|---|---|---|
+|CREATE TABLE Airplane ( Airplane_Number INT PRIMARY KEY); | CREATE TABLE Flight (Flight_Numbe INT PRIMARY KEY, Airplane_Number INT ); | CREATE TABLE Passengers ( Passenger_ID INT PRIMARY KEY, Passenger_Name VARCHAR2(100), Flight_Number INT,Ticket_Number INT,FOREIGN KEY (Flight_Number) REFERENCES Flight(Flight_Number)); | CREATE TABLE FlightCrew (crew_id INT PRIMARY KEY, crew_name VARCHAR(255) NOT NULL, flight_number INT NOT NULL crew_position VARCHAR(50) NOT NULL, FOREIGN KEY (flight_number) REFERENCES Flight(flight_number)); | 
 
-Fligjt Crew
-= crew name
--crew id 
-- flight number
-- crew position
-- 10 pilots
-- 30 flight attendents
-- 
-f
+
