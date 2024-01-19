@@ -35,18 +35,23 @@ Table of Contents
 
 
 **Total Passengers on Each Flight**
+| QUERY | OUTPUT |
+|----|------|
 
-SELECT
+| SELECT
   Flight_Number,
   COUNT(*) AS total_passengers
 FROM
   Passengers
 GROUP BY
-  Flight_Number;
+  Flight_Number;         | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/641c979a-01e1-4f9e-994a-ebe0b7e43574) |
+
 
 **Flights with Co-Pilots**
+| QUERY | OUTPUT |
+|----|------|
 
-SELECT
+| SELECT
   P.Flight_Number,
   FC.crew_id,
   FC.crew_name,
@@ -54,11 +59,14 @@ SELECT
 FROM
   Passengers P
 JOIN
-  FlightCrew FC ON P.Flight_Number = FC.flight_number AND FC.crew_position = 'Co-Pilot';
+  FlightCrew FC ON P.Flight_Number = FC.flight_number AND FC.crew_position = 'Co-Pilot'; | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/e67a91d6-f5bb-4611-a854-6e7b887ae47b) | 
+
   
 **Counting Crew Members on each flight**
+| QUERY | OUTPUT |
+|----|------|
 
-SELECT
+| SELECT
   F.Flight_Number,
   COUNT(CASE WHEN FC.crew_position = 'Pilot' THEN 1 END) AS num_pilots,
   COUNT(CASE WHEN FC.crew_position = 'Co-Pilot' THEN 1 END) AS num_co_pilots,
@@ -68,7 +76,10 @@ FROM
 JOIN
   FlightCrew FC ON F.Flight_Number = FC.flight_number
 GROUP BY
-  F.Flight_Number;
+  F.Flight_Number; | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/23dbf1fa-f4b5-43bc-83e6-db937eb5ffb6) | 
+
 
 ### PL/SQL 
+| QUERY | OUTPUT |
+|----|------|
 
