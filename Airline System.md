@@ -36,22 +36,20 @@ Table of Contents
 
 **Total Passengers on Each Flight**
 | QUERY | OUTPUT |
-|----|------|
-
+|---|---|
 | SELECT
   Flight_Number,
   COUNT(*) AS total_passengers
 FROM
   Passengers
 GROUP BY
-  Flight_Number;         | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/641c979a-01e1-4f9e-994a-ebe0b7e43574) |
+  Flight_Number;  | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/641c979a-01e1-4f9e-994a-ebe0b7e43574) |
 
 
 **Flights with Co-Pilots**
 | QUERY | OUTPUT |
-|----|------|
-
-| SELECT
+|---|---|
+|SELECT
   P.Flight_Number,
   FC.crew_id,
   FC.crew_name,
@@ -66,7 +64,7 @@ JOIN
 | QUERY | OUTPUT |
 |----|------|
 
-| SELECT
+|SELECT
   F.Flight_Number,
   COUNT(CASE WHEN FC.crew_position = 'Pilot' THEN 1 END) AS num_pilots,
   COUNT(CASE WHEN FC.crew_position = 'Co-Pilot' THEN 1 END) AS num_co_pilots,
