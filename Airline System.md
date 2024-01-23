@@ -1,7 +1,7 @@
 # **Arline System** 
 
 Table of Contents
-- Purpose
+- [Purpose](Purpose)
 - ERD 
 - Creating Tables
 - Inserting Data
