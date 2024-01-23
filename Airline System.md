@@ -3,7 +3,7 @@
 Table of Contents
 - [Purpose](#Purpose)
 - [ERD](#ERD) 
-- [Creating Tables](#Creating Tables)
+- [Creating](#Creating ) [Tables](#Tables)
 - Inserting Data
 - Queries
 - PL/SQL Queries 
