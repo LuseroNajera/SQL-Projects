@@ -37,7 +37,7 @@ Table of Contents
 **Total Passengers on Each Flight**
 | QUERY | OUTPUT |
 |---|---|
-| SELECT <br/> Flight_Number, <br/>COUNT(*) AS total_passengers <br/>FROM <br/> Passengers <br/>GROUP BY<br/>Flight_Number;  | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/641c979a-01e1-4f9e-994a-ebe0b7e43574) |
+| SELECT <br/> Flight_Number, <br/>COUNT(*) AS total_passengers <br/>FROM Passengers <br/>GROUP BY Flight_Number;  | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/641c979a-01e1-4f9e-994a-ebe0b7e43574) |
 
 
 **Flights with Co-Pilots**
@@ -49,7 +49,7 @@ Table of Contents
   
 **Counting Crew Members on each flight**
 | QUERY | OUTPUT |
-|:----:|------|
+|:----:|-----|
 
 |SELECT <br/>F.Flight_Number, <br/> COUNT(CASE WHEN FC.crew_position = 'Pilot' THEN 1 END) AS num_pilots, <br/>COUNT(CASE WHEN FC.crew_position = 'Co-Pilot' THEN 1 END) AS num_co_pilots, <br/>COUNT(CASE WHEN FC.crew_position = 'Flight Attendant' THEN 1 END) AS num_flight_attendants<br/>FROM Flight <br/>FJOINFlightCrew FC ON F.Flight_Number = FC.flight_number <br/>GROUP BY F.Flight_Number; | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/23dbf1fa-f4b5-43bc-83e6-db937eb5ffb6) | 
 
