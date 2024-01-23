@@ -62,7 +62,7 @@ JOIN
   
 **Counting Crew Members on each flight**
 | QUERY | OUTPUT |
-|----|------|
+|:----:|------|
 
 |SELECT
   F.Flight_Number,
