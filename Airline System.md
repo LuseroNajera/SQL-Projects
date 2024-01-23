@@ -30,7 +30,7 @@ Table of Contents
 **Passenger Details with Flight Information**
 | QUERY | OUTPUT |
 |----|------|
-|SELECT      P.Passenger_ID,       P.Passenger_Name,       P.Flight_Number,     P.Ticket_Number, F.Airplane_NumberFROM Passengers PJOIN Flight F ON P.Flight_Number = F.Flight_Number; | ![Screenshot 2024-01-18 183121](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/1d969add-8ae0-499d-9c07-cc2d668a09a2) | 
+|SELECT     <br/> P.Passenger_ID,    <br/>   P.Passenger_Name,     <br/>  P.Flight_Number,   <br/>  P.Ticket_Number, <br/> F.Airplane_Number <br/> FROM Passengers <br/> PJOIN Flight F ON P.Flight_Number = F.Flight_Number; | ![Screenshot 2024-01-18 183121](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/1d969add-8ae0-499d-9c07-cc2d668a09a2) | 
 
 
 
