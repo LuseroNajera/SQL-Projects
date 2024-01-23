@@ -3,9 +3,8 @@
 Table of Contents
 - [Purpose](#Purpose)
 - [ERD](#ERD) 
-- [Creating](#Creating ) [Tables](#Tables)
-- Inserting Data
-- Queries
+- [Tables](#Tables)
+- [Queries](#Queries)
 - PL/SQL Queries 
 
 
@@ -19,7 +18,7 @@ Entity Relationship Diagram
 - ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/5f1fb243-2835-4e4e-847b-f68a6960f69e)
 
 
-### Creating Tables 
+### Tables 
 
 
 | **Airplanes** | **Flight** | **Passengers** | **Flight Crew** | 
