@@ -1,12 +1,12 @@
 # **Arline System** 
 
 Table of Contents
-- [Purpose](Purpose)
-- ERD 
-- Creating Tables
+- [Purpose](#Purpose)
+- [ERD](#ERD) 
+- [Creating Tables](#Creating Tables)
 - Inserting Data
-- Select Query
-- Join Query 
+- Queries
+- PL/SQL Queries 
 
 
 ### Purpose
