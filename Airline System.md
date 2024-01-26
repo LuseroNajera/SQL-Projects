@@ -57,7 +57,7 @@ Entity Relationship Diagram
 **Display Passenger Information for a Flight**
 | QUERY | OUTPUT |
 |----|------|
-| "CREATE OR REPLACE PROCEDURE display_passengers_for_flight (p_flight_number IN INT) AS <br/>BEGIN <br/>FOR rec IN (SELECT * FROM Passengers WHERE Flight_Number = p_flight_number) LOOP<br/>DBMS_OUTPUT.PUT_LINE('Passenger ID: ' || rec.Passenger_ID || ', Name: ' || rec.Passenger_Name); <br/>END LOOP; <br/>END display_passengers_for_flight;" | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/9dd3d7c5-8977-4c59-8103-c77a46e1694b)  |
+| CREATE OR REPLACE PROCEDURE display_passengers_for_flight (p_flight_number IN INT) AS <br/>BEGIN <br/>FOR rec IN (SELECT * FROM Passengers WHERE Flight_Number = p_flight_number) LOOP<br/>DBMS_OUTPUT.PUT_LINE('Passenger ID: ' \\ rec.Passenger_ID \\ ', Name: ' \\ rec.Passenger_Name); <br/>END LOOP; <br/>END display_passengers_for_flight; | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/9dd3d7c5-8977-4c59-8103-c77a46e1694b)  |
 
 
 
