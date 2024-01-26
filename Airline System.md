@@ -53,6 +53,26 @@ Entity Relationship Diagram
 
 
 ### PL/SQL 
+
+Display Passenger Information for a Flight
+***
 | QUERY | OUTPUT |
 |----|------|
+| CREATE OR REPLACE PROCEDURE display_passengers_for_flight (p_flight_number IN INT) AS <br/>BEGIN <br/>FOR rec IN (SELECT * FROM Passengers WHERE Flight_Number = p_flight_number) LOOP<br/>DBMS_OUTPUT.PUT_LINE('Passenger ID: ' || rec.Passenger_ID || ', Name: ' || rec.Passenger_Name); <br/>END LOOP; <br/>END display_passengers_for_flight; |![Screenshot 2024-01-25 160305](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/a7ee893d-5aa6-4130-bc45-767ef5571c41) |
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
