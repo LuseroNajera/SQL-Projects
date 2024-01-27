@@ -62,7 +62,7 @@ Entity Relationship Diagram
 the procedure calculates the total number of passengers for a specific flight and displays the result as well as flight details.
 | QUERY | OUTPUT |
 |----|------|
-| CREATE OR REPLACE PROCEDURE calculate_flight_passengers (p_flight_number IN INT) AS<br/>v_total_passengers INT;<br/>BEGIN<br/>SELECT COUNT(*) INTO v_total_passengers<br/>FROM Passengers <br/>WHERE Flight_Number = p_flight_number;<br/>DBMS_OUTPUT.PUT_LINE('Flight Details for Flight ' \\ p_flight_number \\ ':');<br/>FOR rec IN (SELECT * FROM Flight WHERE Flight_Number = p_flight_number) LOOP <br/>DBMS_OUTPUT.PUT_LINE('Airplane Number: ' || rec.Airplane_Number); <br/>END LOOP; <br/>DBMS_OUTPUT.PUT_LINE('Total Passengers: ' \\ v_total_passengers); <br/>END calculate_flight_passengers; | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/6f74e7cf-d7b4-47aa-a4a4-fbd347a54ed3) |
+| CREATE OR REPLACE PROCEDURE calculate_flight_passengers (p_flight_number IN INT) AS<br/>v_total_passengers INT;<br/>BEGIN<br/>SELECT COUNT(*) INTO v_total_passengers<br/>FROM Passengers <br/>WHERE Flight_Number = p_flight_number;<br/>DBMS_OUTPUT.PUT_LINE('Flight Details for Flight ' \\ p_flight_number \\ ':');<br/>FOR rec IN (SELECT * FROM Flight WHERE Flight_Number = p_flight_number) LOOP <br/>DBMS_OUTPUT.PUT_LINE('Airplane Number: ' \\ rec.Airplane_Number); <br/>END LOOP; <br/>DBMS_OUTPUT.PUT_LINE('Total Passengers: ' \\ v_total_passengers); <br/>END calculate_flight_passengers; | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/6f74e7cf-d7b4-47aa-a4a4-fbd347a54ed3) |
  
 
 
