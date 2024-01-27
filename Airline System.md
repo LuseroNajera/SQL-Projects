@@ -1,5 +1,4 @@
-# **Arline System** 
-<img src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/5b94e831-01f9-41f1-ad16-9ee461b8b6c8" width="100" height="100">
+# **Arline System** <img src="https://github.com/LuseroNajera/SQL-Projects/assets/155403528/5b94e831-01f9-41f1-ad16-9ee461b8b6c8" width="50" height="50">
 
 ***
 
@@ -10,6 +9,7 @@
 - [Queries](#Queries)
 - [PL/SQL](#PL/SQL) 
 
+***
 
 ### Purpose
 The simple airline system aims to store and manage data related to flights, passengers, airplanes, and flight crew members.
