@@ -13,7 +13,7 @@ Table of Contents
 
 ### ERD 
 Entity Relationship Diagram
-- This diagram provides a visual represntaion of the data strucsture within an arline system. With this I ahve defined the tables, fields and relationships that will be implementted in the database schema. This ERD can serve as a sort of document that can aid in future modifications and troubleshootintg. 
+- This diagram provides a visual representation of the data structure within an airline system. With this, I have defined the tables, fields, and relationships that will be implemented in the database schema. This ERD can serve as a sort of document that can aid in future modifications and troubleshooting. 
 
 - ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/5f1fb243-2835-4e4e-847b-f68a6960f69e)
 
@@ -31,7 +31,6 @@ Entity Relationship Diagram
 | QUERY | OUTPUT |
 |----|------|
 |SELECT <br/> P.Passenger_ID,<br/> P.Passenger_Name,<br/> P.Flight_Number,<br/> P.Ticket_Number,<br/> F.Airplane_Number <br/> FROM Passengers <br/> PJOIN Flight F <br/> ON P.Flight_Number = F.Flight_Number; | ![Screenshot 2024-01-18 183121](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/1d969add-8ae0-499d-9c07-cc2d668a09a2) | 
-
 
 
 **Total Passengers on Each Flight**
