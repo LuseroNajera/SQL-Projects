@@ -1,6 +1,9 @@
-# **Arline System** 
+# **Arline System** ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/a262517b-e9c1-4292-9077-7974177610b4)
 
-Table of Contents
+
+***
+
+### Table of Contents
 - [Purpose](#Purpose)
 - [ERD](#ERD) 
 - [Tables](#Tables)
@@ -9,21 +12,25 @@ Table of Contents
 
 
 ### Purpose
-- 
+The simple airline system aims to store and manage data related to flights, passengers, airplanes, and flight crew members.
+
+***
 
 ### ERD 
 Entity Relationship Diagram
-- This diagram provides a visual representation of the data structure within an airline system. With this, I have defined the tables, fields, and relationships that will be implemented in the database schema. This ERD can serve as a sort of document that can aid in future modifications and troubleshooting. 
+* This diagram provides a visual representation of the data structure within an airline system. With this, I have defined the tables, fields, and relationships that will be implemented in the database schema. This ERD can serve as a sort of document that can aid in future modifications and troubleshooting. 
 
-- ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/5f1fb243-2835-4e4e-847b-f68a6960f69e)
+* ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/5f1fb243-2835-4e4e-847b-f68a6960f69e)
 
+***
 
 ### Tables 
-
 
 | **Airplanes** | **Flight** | **Passengers** | **Flight Crew** | 
 |---|---|---|---|
 |CREATE TABLE Airplane ( Airplane_Number INT PRIMARY KEY); | CREATE TABLE Flight (Flight_Numbe INT PRIMARY KEY, Airplane_Number INT ); | CREATE TABLE Passengers ( Passenger_ID INT PRIMARY KEY, Passenger_Name VARCHAR2(100), Flight_Number INT,Ticket_Number INT,FOREIGN KEY (Flight_Number) REFERENCES Flight(Flight_Number)); | CREATE TABLE FlightCrew (crew_id INT PRIMARY KEY, crew_name VARCHAR(255) NOT NULL, flight_number INT NOT NULL crew_position VARCHAR(50) NOT NULL, FOREIGN KEY (flight_number) REFERENCES Flight(flight_number)); | 
+
+***
 
 ### Queries
 
@@ -50,6 +57,7 @@ Entity Relationship Diagram
 |---|---|
 | SELECT <br/>F.Flight_Number, <br/> COUNT(CASE WHEN FC.crew_position = 'Pilot' THEN 1 END) AS num_pilots, <br/>COUNT(CASE WHEN FC.crew_position = 'Co-Pilot' THEN 1 END) AS num_co_pilots, <br/>COUNT(CASE WHEN FC.crew_position = 'Flight Attendant' THEN 1 END) AS num_flight_attendants<br/>FROM Flight <br/>FJOINFlightCrew FC ON F.Flight_Number = FC.flight_number <br/>GROUP BY F.Flight_Number; | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/23dbf1fa-f4b5-43bc-83e6-db937eb5ffb6) | 
 
+*** 
 
 ### PL/SQL 
 
