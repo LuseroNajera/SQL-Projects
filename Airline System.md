@@ -5,7 +5,7 @@ Table of Contents
 - [ERD](#ERD) 
 - [Tables](#Tables)
 - [Queries](#Queries)
-- PL/SQL Queries 
+- [PL/SQL](#PL/SQL) 
 
 
 ### Purpose
@@ -54,12 +54,15 @@ Entity Relationship Diagram
 ### PL/SQL 
 
 **Display Passenger Information for a Flight**
+This procedure will take a Flight_Number as input and then displays detailed information for each passenger on that flight.
+
 | QUERY | OUTPUT |
 |----|------|
 | CREATE OR REPLACE PROCEDURE display_passengers_for_flight (p_flight_number IN INT) AS <br/>BEGIN <br/>FOR rec IN (SELECT * FROM Passengers WHERE Flight_Number = p_flight_number) LOOP<br/>DBMS_OUTPUT.PUT_LINE('Passenger ID: ' \\ rec.Passenger_ID \\ ', Name: ' \\ rec.Passenger_Name); <br/>END LOOP; <br/>END display_passengers_for_flight; | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/9dd3d7c5-8977-4c59-8103-c77a46e1694b)  |
 
+**Display Specific Flight Passengers and Details**
+This procedure will take a Flight_Number as input, and then calculate the total number of passengers for that flight, as well as display the flight details.
 
-the procedure calculates the total number of passengers for a specific flight and displays the result as well as flight details.
 | QUERY | OUTPUT |
 |----|------|
 | CREATE OR REPLACE PROCEDURE calculate_flight_passengers (p_flight_number IN INT) AS<br/>v_total_passengers INT;<br/>BEGIN<br/>SELECT COUNT(*) INTO v_total_passengers<br/>FROM Passengers <br/>WHERE Flight_Number = p_flight_number;<br/>DBMS_OUTPUT.PUT_LINE('Flight Details for Flight ' \\ p_flight_number \\ ':');<br/>FOR rec IN (SELECT * FROM Flight WHERE Flight_Number = p_flight_number) LOOP <br/>DBMS_OUTPUT.PUT_LINE('Airplane Number: ' \\ rec.Airplane_Number); <br/>END LOOP; <br/>DBMS_OUTPUT.PUT_LINE('Total Passengers: ' \\ v_total_passengers); <br/>END calculate_flight_passengers; | ![image](https://github.com/LuseroNajera/SQL-Projects/assets/155403528/6f74e7cf-d7b4-47aa-a4a4-fbd347a54ed3) |
