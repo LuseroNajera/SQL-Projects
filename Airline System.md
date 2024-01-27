@@ -14,7 +14,6 @@
 ### Purpose
 
 The simple airline system aims to store and manage data related to flights, passengers, airplanes, and flight crew members.
-
 * Users can extract targeted data and generate reports. 
 * There is efficient tracking and coordination of flight crew members, which then contributes to the overall safety and smooth operations of the airline.
 * The system aids in various tasks, from everyday operational questions to the monitoring of performance and analysis of present and future trends.
